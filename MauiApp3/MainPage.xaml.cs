@@ -37,8 +37,15 @@ public partial class MainPage : ContentPage
 
     }
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        _ = CheckInternetConnectivity();
 
-  
+    }
+
+
+
 
 }
 
